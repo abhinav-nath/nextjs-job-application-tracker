@@ -1,0 +1,1 @@
+# nextjs-job-application-tracker
