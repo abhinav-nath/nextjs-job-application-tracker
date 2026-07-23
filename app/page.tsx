@@ -39,11 +39,22 @@ export default function Home() {
             <div className="mx-auto max-w-6xl">
               {/* Tabs */}
               <div className="flex gap-2 justify-center mb-8">
-                <Button onClick={() => setActiveTab("organise")}>
+                <Button
+                  onClick={() => setActiveTab("organise")}
+                  className={`rounded-lg px-6 py-3 text-sm font-medium transition-colors ${activeTab === "organise" ? "bg-primary text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"}`}
+                >
                   Organise Applications
                 </Button>
-                <Button onClick={() => setActiveTab("hired")}>Get Hired</Button>
-                <Button onClick={() => setActiveTab("boards")}>
+                <Button
+                  onClick={() => setActiveTab("hired")}
+                  className={`rounded-lg px-6 py-3 text-sm font-medium transition-colors ${activeTab === "hired" ? "bg-primary text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"}`}
+                >
+                  Get Hired
+                </Button>
+                <Button
+                  onClick={() => setActiveTab("boards")}
+                  className={`rounded-lg px-6 py-3 text-sm font-medium transition-colors ${activeTab === "boards" ? "bg-primary text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"}`}
+                >
                   Manage Boards
                 </Button>
               </div>
